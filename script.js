@@ -11,7 +11,7 @@ function getWeather() {
 function fetchWeather(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+  const apiKey = 7ff0084309fdee6f3c40546a100ad34c ;
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
   fetch(apiUrl)
