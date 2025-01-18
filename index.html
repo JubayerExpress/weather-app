@@ -5,18 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h1>Weather App</h1>
-    <div class="weather-info">
-      <p id="location"></p>
-      <p id="temperature"></p>
-      <p id="description"></p>
-      <p id="humidity"></p>
-      <p id="wind"></p>
+    <div class="header">
+      <h1>Real-Time Weather Updates</h1>
     </div>
-    <button id="getWeatherBtn">Get Current Weather</button>
+    <div class="weather-card">
+      <div class="location" id="location">Fetching Location...</div>
+      <div class="temp" id="temperature">--°C</div>
+      <div class="weather-icon" id="icon">
+        <img src="" alt="" id="weatherIcon" />
+      </div>
+      <div class="description" id="description"></div>
+      <div class="feels-like">Feels Like: <span id="feelsLike">--°C</span></div>
+      <div class="humidity">Humidity: <span id="humidity">--%</span></div>
+      <div class="wind">Wind Speed: <span id="wind">-- m/s</span></div>
+      <div class="sunrise">Sunrise: <span id="sunrise">--</span></div>
+      <div class="sunset">Sunset: <span id="sunset">--</span></div>
+    </div>
+    <footer>
+      <p>Powered by OpenWeatherMap</p>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
